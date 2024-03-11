@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+</head>
+
+<body>
+    <main>
+<h1>Made by Rezwan Islam</h1>
+<h1>GPA Calculator</h1>
+        <h2 id="english-marks"></h2>
+        <h2 id="english-grade"></h2>
+        <h3 id="english-grade-point"></h3>
+        <br>
+        <h2 id="bangla-marks"></h2>
+        <h2 id="bangla-grade"></h2>
+        <h3 id="bangla-grade-point"></h3>
+        <br>
+        <h2 id="math-marks"></h2>
+        <h2 id="math-grade"></h2>
+        <h3 id="math-grade-point"></h3>
+        <br>
+        <h1 id="gpa"></h1>
+    </main>
+</body>
+<script>
+
+    let english = prompt("Enter Your English Marks :");
+    let bangla = prompt("Enter Your Bangla Marks:");
+    let math = prompt("Enter Your Math Marks:");
+
+    // English Calculation Start
+
+    if (english >= 33 && english <= 39) {
+        english_grade_point = 1.00;
+        document.getElementById('english-marks').innerHTML = ("Your English Marks is: " + english);
+        document.getElementById('english-grade').innerHTML = ("Your English Grade is: D");
+        document.getElementById('english-grade-point').innerHTML = ("Your English Grade Point is: 1.00");
+    }
+    else if (english >= 40 && english <= 49) {
+        english_grade_point = 2.00;
+        document.getElementById('english-marks').innerHTML = ("Your English Marks is: " + english);
+        document.getElementById('english-grade').innerHTML = ("Your English Grade is: C");
+        document.getElementById('english-grade-point').innerHTML = ("Your English Grade Point is: 2.00");
+    }
+    else if (english >= 50 && english <= 59) {
+        english_grade_point = 3.00;
+        document.getElementById('english-marks').innerHTML = ("Your English Marks is: " + english);
+        document.getElementById('english-grade').innerHTML = ("Your English Grade is: B");
+        document.getElementById('english-grade-point').innerHTML = ("Your English Grade Point is: 3.00");
+    }
+    else if (english >= 60 && english <= 69) {
+        english_grade_point = 3.50;
+        document.getElementById('english-marks').innerHTML = ("Your English Marks is: " + english);
+        document.getElementById('english-grade').innerHTML = ("Your English Grade is: A-");
+        document.getElementById('english-grade-point').innerHTML = ("Your English Grade Point is: 3.50");
+    }
+    else if (english >= 70 && english <= 79) {
+        english_grade_point = 4.00;
+        document.getElementById('english-marks').innerHTML = ("Your English Marks is: " + english);
+        document.getElementById('english-grade').innerHTML = ("Your English Grade is: A");
+        document.getElementById('english-grade-point').innerHTML = ("Your English Grade Point is: 4.00");
+    }
+    else if (english >= 80 && english <= 100) {
+        english_grade_point = 5.00;
+        document.getElementById('english-marks').innerHTML = ("Your English Marks is: " + english);
+        document.getElementById('english-grade').innerHTML = ("Your English Grade is: A+");
+        document.getElementById('english-grade-point').innerHTML = ("Your English Grade Point is: 5.00");
+    }
+
+    // Bangla Calculation Start
+
+    if (bangla >= 33 && bangla <= 39) {
+        bangla_grade_point = 1.00;
+        document.getElementById('bangla-marks').innerHTML = ("Your bangla Marks is: " + bangla);
+        document.getElementById('bangla-grade').innerHTML = ("Your bangla Grade is: D");
+        document.getElementById('bangla-grade-point').innerHTML = ("Your bangla Grade Point is: 1.00");
+    }
+    else if (bangla >= 40 && bangla <= 49) {
+        bangla_grade_point = 2.00;
+        document.getElementById('bangla-marks').innerHTML = ("Your bangla Marks is: " + bangla);
+        document.getElementById('bangla-grade').innerHTML = ("Your bangla Grade is: C");
+        document.getElementById('bangla-grade-point').innerHTML = ("Your bangla Grade Point is: 2.00");
+    }
+    else if (bangla >= 50 && bangla <= 59) {
+        bangla_grade_point = 3.00;
+        document.getElementById('bangla-marks').innerHTML = ("Your bangla Marks is: " + bangla);
+        document.getElementById('bangla-grade').innerHTML = ("Your bangla Grade is: B");
+        document.getElementById('bangla-grade-point').innerHTML = ("Your bangla Grade Point is: 3.00");
+    }
+    else if (bangla >= 60 && bangla <= 69) {
+        bangla_grade_point = 3.50;
+        document.getElementById('bangla-marks').innerHTML = ("Your bangla Marks is: " + bangla);
+        document.getElementById('bangla-grade').innerHTML = ("Your bangla Grade is: A-");
+        document.getElementById('bangla-grade-point').innerHTML = ("Your bangla Grade Point is: 3.50");
+    }
+    else if (bangla >= 70 && bangla <= 79) {
+        bangla_grade_point = 4.00;
+        document.getElementById('bangla-marks').innerHTML = ("Your bangla Marks is: " + bangla);
+        document.getElementById('bangla-grade').innerHTML = ("Your bangla Grade is: A");
+        document.getElementById('bangla-grade-point').innerHTML = ("Your bangla Grade Point is: 4.00");
+    }
+    else if (bangla >= 80 && bangla <= 100) {
+        bangla_grade_point = 5.00;
+        document.getElementById('bangla-marks').innerHTML = ("Your bangla Marks is: " + bangla);
+        document.getElementById('bangla-grade').innerHTML = ("Your bangla Grade is: A+");
+        document.getElementById('bangla-grade-point').innerHTML = ("Your bangla Grade Point is: 5.00");
+    }
+
+    // Math Calculation Start
+
+    if (math >= 33 && math <= 39) {
+        math_grade_point = 1.00;
+        document.getElementById('math-marks').innerHTML = ("Your math Marks is: " + math);
+        document.getElementById('math-grade').innerHTML = ("Your math Grade is: D");
+        document.getElementById('math-grade-point').innerHTML = ("Your math Grade Point is: 1.00");
+    }
+    else if (math >= 40 && math <= 49) {
+        math_grade_point = 2.00;
+        document.getElementById('math-marks').innerHTML = ("Your math Marks is: " + math);
+        document.getElementById('math-grade').innerHTML = ("Your math Grade is: C");
+        document.getElementById('math-grade-point').innerHTML = ("Your math Grade Point is: 2.00");
+    }
+    else if (math >= 50 && math <= 59) {
+        math_grade_point = 3.00;
+        document.getElementById('math-marks').innerHTML = ("Your math Marks is: " + math);
+        document.getElementById('math-grade').innerHTML = ("Your math Grade is: B");
+        document.getElementById('math-grade-point').innerHTML = ("Your math Grade Point is: 3.00");
+    }
+    else if (math >= 60 && math <= 69) {
+        math_grade_point = 3.50;
+        document.getElementById('math-marks').innerHTML = ("Your math Marks is: " + math);
+        document.getElementById('math-grade').innerHTML = ("Your math Grade is: A-");
+        document.getElementById('math-grade-point').innerHTML = ("Your math Grade Point is: 3.50");
+    }
+    else if (math >= 70 && math <= 79) {
+        math_grade_point = 4.00;
+        document.getElementById('math-marks').innerHTML = ("Your math Marks is: " + math);
+        document.getElementById('math-grade').innerHTML = ("Your math Grade is: A");
+        document.getElementById('math-grade-point').innerHTML = ("Your math Grade Point is: 4.00");
+    }
+    else if (math >= 80 && math <= 100) {
+        math_grade_point = 5.00;
+        document.getElementById('math-marks').innerHTML = ("Your math Marks is: " + math);
+        document.getElementById('math-grade').innerHTML = ("Your math Grade is: A+");
+        document.getElementById('math-grade-point').innerHTML = ("Your math Grade Point is: 5.00");
+    }
+
+    //     let english_grade_point1= parseFloat(english_grade_point);
+    //    let bangla_grade_point1= parseFloat(bangla_grade_point);
+    //    let math_grade_point1= parseFloat(math_grade_point);
+
+    let gpa = (english_grade_point + bangla_grade_point + math_grade_point)/3;
+    document.getElementById('gpa').innerHTML = ("Your GPA is: "+gpa);
+
+</script>
+
+</html>
